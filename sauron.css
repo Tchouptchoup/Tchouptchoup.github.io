@@ -1,0 +1,515 @@
+@font-face {
+  font-family: "Anirm";
+  src: url(polices/aniron/anirm.ttf);
+}
+
+@font-face {
+  font-family: "PartyBusiness";
+  src: url(polices/partybusiness/partybusiness.ttf);
+}
+
+@font-face {
+  font-family: "Tengwar";
+  src: url(polices/tengwar/tngan.ttf);
+}
+
+body {
+  background-image: url(images/bg_light.png);
+  }
+
+.titre1 {
+  color: white;
+  margin-left: 8%;
+  font-family: "Anirm";
+  margin-bottom: 15px;
+  font-weight: lighter;
+
+}
+
+.titre2 {
+  color: black;
+  margin-left: 8%;
+  font-family: "Anirm";
+  margin-bottom: 15px;
+  font-weight: lighter;
+}
+
+.i {
+  color: #FF6600;
+  font-family: "Tengwar";
+  font-size: 40px;
+}
+
+.j {
+  color: #FF6600;
+  font-family: "Tengwar";
+}
+
+.texte {
+  font-family: "PartyBusiness";
+  font-size: 18px;
+}
+
+img{
+  max-width: 100%;
+  height: auto;
+}
+
+/*Navbar*/
+
+.navbar {
+  background-color: #FF6600;
+}
+
+.nav-item {
+  font-family: "Anirm";
+  font-size: 14px;
+}
+
+.navbar .nav-item .nav-link,  .navbar .nav-item .nav-link:hover{
+  color: white;
+}
+
+.navbar .active .nav-link, .nav-link:hover {
+  display: inline-block;
+  border-bottom: 3px solid #FFF;
+}
+
+.barreMenu {
+  color: white;
+}
+
+.collapse {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/*Slider*/
+
+.carousel-caption {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  font-family: "PartyBusiness";
+  margin-top: 5%;
+}
+
+.titre-slide-1 {
+  font-size: 6vw;
+  align-self: flex-start;
+  margin-left: 12%;
+}
+
+.titre-slide-2 {
+  font-size: 3vw;
+  display: flex;
+  align-self: flex-start;
+  margin-left: 12%;
+}
+
+section {
+  margin-top: 30px;
+}
+
+.tirets-transparents {
+  opacity: 0;
+}
+
+.carousel-control-prev-icon {
+  background-image: url(images/gauche.png);
+  width: 60px;
+  height: 60px;
+}
+
+.carousel-control-next-icon {
+  background-image: url(images/droite.png);
+  width: 60px;
+  height: 60px;
+}
+
+
+/* Fellows */
+
+.choix {
+  display: flex;
+  justify-content: center;
+}
+
+.alive {
+  font-size: 18px;
+}
+.pills {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-family: "Anirm";
+}
+
+.badge {
+  font-size: 14px;
+  padding: 10px;
+  margin: 10px;
+}
+
+.badge-pill {
+  color: grey;
+  border-radius: 0rem;
+}
+
+.b-symbole {
+  color: transparent;
+  font-family: "Tengwar";
+}
+
+a:hover .b-symbole {
+  color: #FF6600;
+  font-family: "Tengwar";
+}
+
+a:hover .badge {
+  color: #FF6600;
+  border-bottom: 3px solid #FF6600;
+}
+
+.active .b-symbole  {
+  color: #FF6600;
+  font-family: "Tengwar";
+}
+
+.active .badge {
+  color: #FF6600;
+  border-bottom: 3px solid #FF6600;
+}
+
+/*CSS Aventuriers*/
+
+.card {
+  margin: 10px;
+  font-family: "PartyBusiness";
+  border-style: solid;
+  border-width: 5px;
+  border-radius: 0em;
+  border-color: black;
+}
+
+.card-body {
+  color: grey;
+  font-size: 1.5em;
+  text-align: left;
+  border: 4px;
+  border-radius: 0px;
+  background-color: black;
+
+}
+
+/* Gimli */
+
+.dead {
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3.5rem;
+  color: #FF6600;
+}
+
+.nom-gimli {
+  position: absolute;
+  bottom: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3.5rem;
+  color: white;
+  text-decoration: line-through #FF6600;
+}
+
+.image-gimli {
+  opacity: 0.2;
+  }
+
+.card-gimli {
+  background-color: black;
+}
+  /*Gandalf + Aragorn */
+  /*Image + Textes sans survol*/
+  
+  .card-gandalf-aragorn {
+    background-color: grey;
+  }
+
+
+  .gandalf {
+    position: relative;
+    text-align: center;
+    }
+  
+  .imageGandalf {
+    opacity: 0.4; 
+    }
+  
+  /* Texte 1 : reward = texte + bloc */
+  
+  .rewardColor{
+    color: #FF6600;
+    white-space: normal;
+    }
+  
+  .reward {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width:85%;
+    height:20%;
+    background-color: white;
+    opacity:0.8;
+    border-radius: 2px;
+    box-shadow: 0 0 4px 4px white;
+    }
+
+  .texteReward{
+    position: relative;
+    
+    text-align: center;
+    }
+
+    @media (max-width: 575.98px) { 
+      .texteReward{ 
+        font-size: 35px;
+        top: 1%;
+      }
+     }
+
+    @media (min-width: 576px) and (max-width: 767.98px) {
+      .texteReward{ 
+        font-size: 40px;
+        top: 6%;
+      }
+     }
+
+    @media (min-width: 768px) and (max-width: 991.98px) {
+      .texteReward{ 
+        font-size: 25px;
+        top: 9%;
+      }
+    }
+
+    @media (min-width: 992px) and (max-width: 1199.98px) {
+      .texteReward{ 
+        font-size: 30px;
+        top: 8%;
+      }
+     }
+
+     @media (min-width: 1200px) { 
+       .texteReward{ 
+        font-size: 35px;
+        top: 1%;
+      }
+     }
+  
+  /*Texte 2 : Nom*/
+  
+  .nomGandalf {
+    position: absolute;
+    bottom: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3.5rem;
+    color: white;
+    }
+  
+  /*Hover*/
+  
+  .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left:0;
+    top:0;
+    bottom:0;
+    right: 0;
+    opacity: 0;
+    transition: .5s ease;
+    }
+  
+  .gandalf:hover .overlay {
+    opacity: 1;
+    }
+  
+  .nomGandalf2 {
+    position: absolute;
+    bottom: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3rem;
+    color: white;
+    }
+
+  /* Reward */
+
+  .my-reward {
+    background-image: url(images/bg_dark.png);
+  }
+
+  .texteCaptured {
+    max-width: 90%;
+    color: white;
+  }
+
+  .bouton-contact {
+  transform:skewX(-15deg);
+  border-radius: 0px;
+  font-family: "PartyBusiness";
+  color: #FF6600;
+  background-color: white;
+  font-size: 25px;
+  }
+
+  /* Best hunters */
+
+  .nom-hunter {
+    font-family: "Anirm";
+    color: #FF6600;
+  }
+
+.palmares-hunter {
+  font-family: "PartyBusiness";
+  font-size: 25px;
+}
+
+.profile {
+  text-decoration: underline;
+}
+
+.bouton-hunter {
+  transform:skewX(-15deg);
+  border-radius: 0px;
+  font-family: "PartyBusiness";
+  color: #FF6600;
+  background-color: black;
+  font-size: 25px;
+}
+
+.race {
+  transform:skewX(15deg);
+}
+
+  /* About the Ring */
+
+  .card-ring {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .aboutRing  {
+    background-image: url(images/bg_dark.png);
+    padding-bottom: 10px;
+  }
+
+  .card-header {
+    background-color: #FF6600;
+    color: white;
+    font-family: "Anirm";
+    font-size: 14px;
+    border: 1px solid #FF6600;
+  }
+
+  .card-the-ring {
+    border: none;
+    border-bottom: 2px solid #FF6600;
+    background-image: url(images/bg_light.png);
+  }
+
+  .table {
+    font-family: "Anirm";
+    background-color: transparent;
+  }
+
+  .table-texte {
+    color: grey;
+    font-size: 1rem;
+  }
+
+  .table-active {
+    background-color: white;
+    opacity: ;
+  }
+
+  .card-header {
+    font-weight: bold;
+  }
+  
+  .blockquote {
+    font-size: 15px;
+  }
+  
+  .precious {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  /* Join the army */
+
+  .bouton-sauron {
+    transform:skewX(-15deg);
+    border-radius: 0px;
+    font-family: "Anirm";
+    color: #FF6600;
+    background-color: black;
+  }
+
+  .sauron-rules {
+    transform:skewX(15deg);
+  }
+
+  .moreInfo {
+    font-family: "Anirm";
+    color: #FF6600;
+  }
+
+  .sauron-contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  /* Contact us */
+
+  .contact {
+    background-image: url(images/bg_dark.png);
+    padding-bottom: 10px;
+  }
+
+  .form-group {
+    font-family: "Anirm";
+  }
+
+  .contactus {
+    font-family: "Anirm";
+    color: white;
+  }
+
+  /* Footer */
+
+  footer {
+    background-color: #FF6600;
+    color: white;
+  }
+
+  footer li {
+    font-family: "Anirm";
+  }
+
+  .liste {
+    list-style: none;
+    margin-top: 2%;
+  }
